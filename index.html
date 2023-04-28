@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <meta name="title" content="weather" />
+    <meta
+      name="description"
+      content="Weather is a Weather web made by HoangDev"
+    />
+    <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <body>
+    <!-- Header component -->
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="#">
+          <img
+            src="assets/images/logo.png"
+            width="364"
+            height="58"
+            alt="logo"
+          />
+        </a>
+        <div class="search-view" data-search-view>
+          <div class="search-wrapper">
+            <input
+              autocomplete="off"
+              type="search"
+              name="search"
+              class="search-field searchding"
+              id=""
+              placeholder="Search city ..."
+              data-search-field
+            />
+            <span class="m-icon">search</span>
+            <button
+              class="icon-btn leading-icon has-state"
+              aria-label="close search"
+              search-data-toggler
+            >
+              <span class="m-icon">arrow_back</span>
+            </button>
+          </div>
+
+          <div data-result-search class="search-result">
+            <ul class="view-list">
+              <li class="view-item">
+                <span class="m-icon">location_on</span>
+                <div>
+                  <p class="item-title">Bạc Liêu</p>
+                  <p class="label-2 item-subtitle">Đông hải</p>
+                </div>
+                <a href="" class="item-link has-state" data-search-toggler></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button
+            class="icon-btn has-state"
+            aria-label="open search"
+            data-search-toggler
+          >
+            <span class="m-icon icon">search</span>
+          </button>
+          <a
+            href="#current-location"
+            class="btn-primary has-state"
+            data-current-location-btn
+          >
+            <span class="m-icon">my_location</span>
+            <span class="span">Current Location </span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!--Content component -->
+    <main>
+      <article class="container">
+        <div class="container-left">
+          <section
+            class="section current-weather"
+            aria-label="current weather "
+            data-current-weather
+          >
+            <div class="card card-lg current-weather-card">
+              <h2 class="title-2 card-title">Now</h2>
+              <div class="wrapper">
+                <p class="heading">25&deg;<sup>c</sup></p>
+                <img
+                  src="assets/images/weather_icons/01d.png"
+                  width="64"
+                  height="64"
+                  alt="Overcast Clouds"
+                  class="weather-icon"
+                />
+              </div>
+              <p class="body-3">Overcast Clouds</p>
+              <ul class="meta-list">
+                <li class="meta-item">
+                  <span class="m-icon">calendar_today</span>
+                  <p class="title-3 meta-text">Thursday 16, Feb</p>
+                </li>
+                <li class="meta-item">
+                  <span class="m-icon">calendar_today</span>
+                  <p class="title-3 meta-text">Bạc Liêu,Đông Hải</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="section forecast" aria-labelledby="forecast">
+            <h2 class="title-2" id="forecast-label">
+            </h2>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+  <script src=""></script>
+  <script src=""></script>
+</html>
