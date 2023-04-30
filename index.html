@@ -31,18 +31,10 @@
             alt="logo"
           />
         </a>
-        <div class="search-view" data-search-view>
+        <div class="search-view active" data-search-view>
           <div class="search-wrapper">
-            <input
-              autocomplete="off"
-              type="search"
-              name="search"
-              class="search-field searchding"
-              id=""
-              placeholder="Search city ..."
-              data-search-field
-            />
-            <span class="m-icon">search</span>
+            <input autocomplete="off" type="search" name="search" class="search-field searchding" id="" placeholder="Search city ..." data-search-field/>
+            <span class="m-icon leading-icon">search</span>
             <button
               class="icon-btn leading-icon has-state"
               aria-label="close search"
@@ -52,7 +44,7 @@
             </button>
           </div>
 
-          <div data-result-search class="search-result">
+          <div data-result-search class="active search-result">
             <ul class="view-list">
               <li class="view-item">
                 <span class="m-icon">location_on</span>
@@ -218,11 +210,11 @@
                       </li>
                     </ul>
                   </div>
-                  <span class="badge aqi1 label-1">
+                  <span class="badge aqi1 label-1" title="aqi message">
                     Good
                   </span>
                 </div>
-               
+
                 <div class="card card-sm highlights-card two">
                   <h3 class="title-3">Sunrise & Sunset</h3>
                   <div class="card-list">
@@ -278,9 +270,190 @@
               </div>
             </div>
           </section>
+          <section
+            class="section hourly-forecast"
+            aria-label="hourly forecast"
+            data-hourly-forecast
+          >
+            <h2 class="title-2">Today at</h2>
+            <div class="slider-container">
+              <ul class="slider-list" app-temp>
+                <li class="slider-item">
+                  <div class="card card-sm slider-card">
+                    <p class="body-3">03 PM</p>
+                    <img
+                      src="assets/images/weather_icons/01n.png"
+                      width="48"
+                      loading="lazy"
+                      height="48"
+                      alt=""
+                      class="weather-icon"
+                    />
+                    <p class="body-3">25&deg;</p>
+                  </div>
+                </li>
+                <li class="slider-item">
+                  <div class="card card-sm slider-card">
+                    <p class="body-3">03 PM</p>
+                    <img
+                      src="assets/images/weather_icons/01n.png"
+                      width="48"
+                      loading="lazy"
+                      height="48"
+                      alt=""
+                      class="weather-icon"
+                    />
+                    <p class="body-3">25&deg;</p>
+                  </div>
+                </li>
+                <li class="slider-item">
+                  <div class="card card-sm slider-card">
+                    <p class="body-3">03 PM</p>
+                    <img
+                      src="assets/images/weather_icons/01n.png"
+                      width="48"
+                      loading="lazy"
+                      height="48"
+                      alt=""
+                      class="weather-icon"
+                    />
+                    <p class="body-3">25&deg;</p>
+                  </div>
+                </li>
+                <li class="slider-item">
+                  <div class="card card-sm slider-card">
+                    <p class="body-3">03 PM</p>
+                    <img
+                      src="assets/images/weather_icons/01n.png"
+                      width="48"
+                      loading="lazy"
+                      height="48"
+                      alt=""
+                      class="weather-icon"
+                    />
+                    <p class="body-3">25&deg;</p>
+                  </div>
+                </li>
+                <li class="slider-item">
+                  <div class="card card-sm slider-card">
+                    <p class="body-3">03 PM</p>
+                    <img
+                      src="assets/images/weather_icons/01n.png"
+                      width="48"
+                      loading="lazy"
+                      height="48"
+                      alt=""
+                      class="weather-icon"
+                    />
+                    <p class="body-3">25&deg;</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="slider-list" app-wind>
+                <li class="slider-item">
+                  <div class="card card-sm slider-card">
+                    <p class="body-3">03 PM</p>
+                    <img
+                      src="assets/images/weather_icons/direction.png"
+                      width="48"
+                      loading="lazy"
+                      height="48"
+                      alt=""
+                      class="weather-icon"
+                    />
+                    <p class="body-3">12 km/h</p>
+                  </div>
+                </li>
+                <li class="slider-item">
+                  <div class="card card-sm slider-card">
+                    <p class="body-3">03 PM</p>
+                    <img
+                      src="assets/images/weather_icons/direction.png"
+                      width="48"
+                      loading="lazy"
+                      height="48"
+                      alt=""
+                      class="weather-icon"
+                    />
+                    <p class="body-3">12 km/h</p>
+                  </div>
+                </li>
+                <li class="slider-item">
+                  <div class="card card-sm slider-card">
+                    <p class="body-3">03 PM</p>
+                    <img
+                      src="assets/images/weather_icons/direction.png"
+                      width="48"
+                      loading="lazy"
+                      height="48"
+                      alt=""
+                      class="weather-icon"
+                    />
+                    <p class="body-3">12 km/h</p>
+                  </div>
+                </li>
+                <li class="slider-item">
+                  <div class="card card-sm slider-card">
+                    <p class="body-3">03 PM</p>
+                    <img
+                      src="assets/images/weather_icons/direction.png"
+                      width="48"
+                      loading="lazy"
+                      height="48"
+                      alt=""
+                      class="weather-icon"
+                    />
+                    <p class="body-3">12 km/h</p>
+                  </div>
+                </li>
+                <li class="slider-item">
+                  <div class="card card-sm slider-card">
+                    <p class="body-3">03 PM</p>
+                    <img
+                      src="assets/images/weather_icons/direction.png"
+                      width="48"
+                      loading="lazy"
+                      height="48"
+                      alt=""
+                      class="weather-icon"
+                    />
+                    <p class="body-3">12 km/h</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <footer class="footer">
+            <p class="body-3">Copyright 2023 HoangDev. All rights reverved</p>
+            <p class="body-3">
+              Powered By
+              <a
+                href="https://openweathermap.org/api"
+                title="Free openweather Api"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="assets/images/openweather.png"
+                  loading="lazy"
+                  width="30"
+                  height="30"
+                  alt="OpenWeather"
+                />
+              </a>
+            </p>
+          </footer>
         </div>
+        <div class="loading" data-loading></div>
       </article>
     </main>
+    <section class="error-content">
+      <h2 class="heading">404</h2>
+      <p class="body-1">Page not found!</p>
+      <a href="" class="btn-primary">
+        <span class="span"> Go Home </span>
+      </a>
+    </section>
   </body>
   <script src=""></script>
   <script src=""></script>
